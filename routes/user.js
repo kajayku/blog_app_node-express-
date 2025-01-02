@@ -31,7 +31,7 @@ router.post("/signin", async (req,res)=>{
 });
 
 router.get("/logout",(req,res)=>{
-  res.clearCookie("token").redirect("/");
+  res.clearCookie("token").redirect("signin");
 });
 
 router.post("/signup", async (req,res)=>{
